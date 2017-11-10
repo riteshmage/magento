@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<default>
+<message_index_all>
+	<refernce name="content">
+		<block type="message/message" name="message" template="message/add.phtml"></block>
+	</refernce>
+</message_index_all>
+</default>

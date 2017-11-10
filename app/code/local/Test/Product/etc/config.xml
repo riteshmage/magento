@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<config>
+    <global>
+        <models>
+            <catalog>
+                <rewrite>
+                    <product>Test_Product_Model_Product</product>
+                </rewrite>
+            </catalog>
+       </models>
+
+        <blocks>
+            <catalog>
+                <rewrite>
+                    <product_view>Test_Product_Block_Product</product_view>
+                </rewrite>
+            </catalog>
+       </blocks>
+    </global>
+
+<frontend>
+    <routers>
+        <catalog>
+            <args>
+                <modules>
+                    <test_product before="Mage_Catalog">Test_Product</test_product>
+                </modules>
+            </args>
+        </catalog>
+    </routers>
+</frontend>
+</config>

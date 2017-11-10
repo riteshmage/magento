@@ -1,0 +1,25 @@
+<div id="student">
+	<form id="student_form" name="student_form" action="<?php echo Mage::getUrl('student/index/save') ?>" method="post">
+
+		<label>Name</label><br>
+		<input 	type="text" name="student_name"
+				class="input-text required-entry validate-alpha"
+				placeholder="Enter name" /><br>
+		<label>Age</label><br>
+		<input type="number" name="student_age" min="1" max="100"
+			   class="input-text required-entry validate-number"
+			   placeholder="Enter age" /><br>
+		<label>Weight</label><br>
+		<input 	type="number" name="student_weight" 											class="input-text required-entry "
+				placeholder="Enter Weight" /><br>
+		<label>Comment</label><br>
+		<textarea rows="4" cols="50" id="comment" name="comment"
+				  placeholder="add message"
+				  class="input-text required-entry">	  	
+		</textarea>
+		<input type="submit" value="Submit" /><br>
+	</form>
+</div>
+<script type="text/javascript">
+ 	var customForm = new VarienForm('student_form');
+</script>	 
